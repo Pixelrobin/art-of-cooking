@@ -1,0 +1,125 @@
+{% extends "deps/_layout.njk" %}
+
+{% set headerClass = "home" %}
+{% set pageId = "home" %}
+{% set pageTitle = "Home" %}
+
+{% block headerStart %}
+	<a href="{{ root }}/pages/classes.html" class="button button--bigger header__nav__button">See Classes</a>
+{% endblock %}
+
+{% block headerEnd %}
+	<div class="header__hero">
+		<div class="header__hero__content">
+			<img alt="Art of Cooking logo" src="{{ root }}/media/logo-blue.svg">
+			<br>
+			<a class="button button--bigger" href="{{ root }}/pages/classes.html">See Classes</a>
+		</div>
+
+		<img id="header-cookers" alt="4 People crowded around big pans cooking" src="{{ root }}/media/people-cooking.jpg">
+
+		<div class="paint-bottom"></div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="page" style="padding-top: 2rem;">
+		<h1 class="text-center">The Art of Cooking</h1>
+		<h2 class="text-center h3 bottom-space">Institute of Culinary Arts</h2>
+
+		<div class="home-video">
+			<img src="{{ root }}/media/video-thumbnail.jpg" alt="Video thumbnail showing various vegetables and a knife on a chopping board">
+
+			<img class="home-video__play" alt="video play button" src="{{ root }}/media/play-button.svg">
+		</div>
+	</div>
+
+	<div class="home-description bottom-space">
+		<div class="paint-top"></div>
+		<div class="home-description__content">
+			<figure class="home-description__chef">
+				<img src="{{ root }}/media/pizza-guy.png">
+				<figcaption>
+					<span class="text-smaller">Featured chef:</span>
+					<br>
+					<span class="text-bigger text-bold">Marcus Stern</span>
+				</figcaption>
+			</figure>
+
+			<p>The Art of Cooking offers short classes throughout the year in our well equipped facilities that rival the best five star kitchens of the world. Learn from the chefs who concoct the most savory fare at Bellingham’s local restaurants and eateries.</p>
+		</div>
+		<div class="paint-bottom"></div>
+	</div>
+
+	<!--<img class="home-soup" src="{{ root }}/media/soup.jpg" alt="">-->
+
+	<section class="page text-center">
+		<h1 class="h2">Ready to Get Cooking?</h1>
+		<a href="{{ root }}/pages/classes.html" class="button button--bigger no-margin">See Classes</a>
+	</section>
+
+	<section class="bottom-space">
+		<!--<h1 class="h2 text-center">Next Class</h1>-->
+
+		<div class="home-next-class">
+			<div class="paint-top"></div>
+
+			<div class="page home-next-class__content">
+				<div class="home-next-class__image" role="img" aria-label="" style="background-image: url({{ root }}/media/classes/{{ classes[0].id }}.jpg);"></div>
+
+				<div class="home-next-class__info">
+					<h1>Next Class</h1>
+					<h2>{{ classes[0].name }}</h2>
+					<p class="text-bold text-bigger">{{ classes[0].time }}</p>
+
+					<a href="{{ root }}/pages/classes.html" class="button button--yellow">Learn More</a>
+					<a href="{{ root }}/pages/register.html" class="button button--yellow">Register</a>
+				</div>
+			</div>
+
+			<div class="paint-bottom"></div>
+		</div>
+	</section>
+
+	<section class="page home-upcoming-classes">
+		<h1 class="h2 text-center">Future classes</h1>
+		<p class="text-bigger text-bold text-center bottom-space">Coming soon this Spring!</p>
+
+		{% for column in upcomingClasses %}
+			<div class="home-upcoming-classes__column">
+				<h2 class="h3">{{ column.month }}</h2>
+
+				<ul>
+					{% for class in column.classes %}
+						<li>
+							<div>
+								<span class="home-upcoming-classes__title">{{ class.name }}</span>
+								<br>
+								{{ class.date }}
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
+	</section>
+
+	<section class="home-sign-up bottom-space">
+
+		<div class="home-sign-up__content">
+			<form>
+				<h1 class="h3 text-center">Sign up for updates</h1>
+				<p class="text-bigger text-bold text-center full-width">Get notified about new classes</p>
+				
+				<label class="text-bold" for="email">Your email:</labeL>
+				<br>
+				
+				<div class="home-sign-up__inputs">
+					<input type="email">
+					<div class="home-sign-up__submit-wrapper"><input type="submit" value="Sign up"></div>
+				</div>
+			</form>
+		</div>
+	</section>
+		<!--<img class="home-pan" alt="Top view of a pan containing fried eggs with various other materials" src="{{ root }}/media/fancy-eggs.jpg">-->
+{% endblock %}

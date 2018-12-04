@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <title>play-button</title>
+  <circle cx="80" cy="80" r="80" style="fill: #2d4656"/>
+  <path d="M112.69,77.41,60.53,47.29a1.84,1.84,0,0,0-2.75,1.59v60.24a1.84,1.84,0,0,0,2.75,1.59l52.16-30.12A1.83,1.83,0,0,0,112.69,77.41Z" style="fill: #ebc170"/>
+</svg>

@@ -1,0 +1,37 @@
+{% extends "deps/_layout.njk" %}
+
+{% set pageTitle = recipes[recipeIndex].name + " - Recipe" %}
+
+{% block content %}
+	<div class="page bottom-space">
+		<h1 class="h2 text-center bottom-space">{{ recipes[recipeIndex].name }}</h1>
+
+		<div class="recipe">
+			<div class="recipe__image"><img src="{{ root }}/media/recipes/{{ recipes[recipeIndex].id }}.jpg" alt="{{ recipes[recipeIndex].imageAlt }}"></div>
+
+			<div class="recipe__ingredients flex-row__item">
+				<h2 class="h3">Ingredients</h2>
+
+				{% for category in recipes[recipeIndex].ingredients %}
+					{% if category.name %}
+						<h3 class="h4">{{category.name}}</h3>
+					{% endif %}
+
+					<ul>
+						{% for item in category.items %}
+							<li>{{ item }}</li>
+						{% endfor %}
+					</ul>
+				{% endfor %}
+			</div>
+
+			<div class="recipe__directions" style="flex-basis: 33%">
+				<h2 class="h3">Preperation</h2>
+
+				{% for step in recipes[recipeIndex].preperation %}
+					<p>{{ step }}</p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

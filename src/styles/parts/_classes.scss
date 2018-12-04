@@ -1,0 +1,72 @@
+@import "../deps/meta";
+
+.classes-class {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 8rem;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		display: flex;
+	}
+
+	.classes-class__img {
+		flex: 1;
+		position: relative;
+		overflow: hidden;
+		min-height: 20rem;
+		margin-bottom: 2rem;
+		background-size: cover;
+		background-position: center;
+		border-radius: $radius-small;
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			margin-bottom: 0;
+			margin-right: 2rem;
+		}
+	}
+
+	.classes-class__info {
+		min-width: 10rem;
+		flex: 1;
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		.classes-class__info__avatar {
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			background-size: cover;
+			background-position: center;
+			display: inline-block;
+			vertical-align: center;
+			margin-right: 1rem;
+		}
+
+		.classes-class__info__details {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.button {
+			margin: 0;
+		}
+	
+		.classes-class__price {
+			display: inline-block;
+			height: $input-height;
+			line-height: $input-height;
+			vertical-align: top;
+			margin: 0;
+			font-size: 1.75rem;
+			font-weight: bold;
+			margin-right: 1rem;
+	
+			span {
+				font-size: 1.5rem;
+				vertical-align: top;
+			}
+		}
+	}
+}

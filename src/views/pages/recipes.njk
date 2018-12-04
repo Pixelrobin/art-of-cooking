@@ -1,0 +1,23 @@
+{% extends "deps/_layout.njk" %}
+
+{% set pageId = "recipes" %}
+{% set pageTitle = "Recipes" %}
+{% set pageDescription = "Current recipes from our classes at The Art of Cooking, learn to cook a diverse, delicous selection of foods for free." %}
+
+{% block content %}
+	<div class="page">
+		<h1 class="text-center">Recipes</h1>
+		<h2 class="h3 text-center bottom-space">From This Months classes</h2>
+
+		<ul class="recipe-list bottom-space">
+			{% for recipe in recipes %}
+				<li class="recipe-list__item no-decoration">
+					<img src="{{ root }}/media/recipes/{{ recipe.id }}.jpg" alt="{{ recipe.imageAlt }}">
+					<span class="h3">{{ recipe.name }}</span>
+
+					<a class="button button--white no-margin" href="{{ root }}/pages/recipes/{{ recipe.id }}.html">View Recipe</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endblock %}

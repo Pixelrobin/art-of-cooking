@@ -1,0 +1,31 @@
+{
+  "name": "art-of-cooking",
+  "version": "1.0.0",
+  "description": "Art of Cooking Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Savchuk",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.24.4",
+    "gulp": "next",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-data": "^1.3.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-nunjucks": "^4.0.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "jsonfile": "^4.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "promise-polyfill": "^8.1.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

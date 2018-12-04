@@ -1,0 +1,24 @@
+$font-nexa-rust: 'Nexa Rust Sans Black', 'Arial Black', sans-serif;
+$font-nexa: 'Nexa Bold', 'Arial', sans-serif;
+$font-verdana: Verdana, sans-serif;
+
+$color-sun: #ebc170;
+$color-leaf: #64932e;
+$color-tomato: #cc2b2b;
+$color-soil: #473c37;
+$color-stone: #2d4656;
+
+$input-height: 3rem;
+$border-small: 0.15rem;
+$border-big: 0.3rem;
+$radius-small: 0.2rem;
+
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+$lighter: 25%;
+
+@function lighten($color, $amount: 80%) {
+	@return mix($color, #fffef7, $amount)
+}

@@ -1,0 +1,29 @@
+{% extends "deps/_layout.njk" %}
+
+{% set pageId = "classes" %}
+{% set pageTitle = "Classes" %}
+{% set pageDescription = "See our local class offering in Bellingham Washington by the Art of Cooking, expirience a diverse selection at afforadable prices." %}
+
+{% block content %}
+	<div class="page">
+		<h1 class="text-center bottom-space">Current Classes</h1>
+
+		{% for class in classes %}
+			<section class="classes-class">
+				<div class="classes-class__img" role="img" aria-label="{{ class.imageAlt }}" style="background-image: url('{{ root }}/media/classes/{{ class.id }}.jpg')"></div>
+
+				<div class="classes-class__info">
+					<h1>{{ class.name }}</h1>
+					
+					<div class="classes-class__info__avatar" style="background-image: url('{{ root }}/media/upcoming-classes/french-bistro.jpg');"></div>
+					<p class="classes-class__info__details"><span class="text-bigger text-bold">{{ class.time }}</span><br>{{ class.chef }}</p>
+
+					<p>{{ class.description }}</p>
+
+					<p class="classes-class__price"><span>$</span>{{ class.price }}</p>
+					<a href="{{ root }}/pages/register.html" class="button">Register Now</a>
+				</div>
+			</section>
+		{% endfor %}
+	</div>
+{% endblock %}

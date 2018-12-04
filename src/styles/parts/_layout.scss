@@ -1,0 +1,51 @@
+@import "../deps/meta";
+
+#wrapper {
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+#pre-footer {
+	min-height: 100vh;
+}
+
+.page {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+.flex-row {
+	display: block;
+
+	.flex-row__item {
+		flex: 1;
+		border-radius: $radius-small;
+		margin-bottom: 2rem;
+		padding: 1rem;
+	}
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		display: flex;
+
+		.register-row__item {
+			margin: 1rem;
+		}
+	}
+}
+
+.vertical-center {
+	position: relative;
+
+	.vertical-center__child {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

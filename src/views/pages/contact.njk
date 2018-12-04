@@ -1,0 +1,33 @@
+{% extends "deps/_layout.njk" %}
+
+{% set pageId = "contact" %}
+{% set pageTitle = "Contact" %}
+
+{% block content %}
+	<div class="page">
+		<h1 class="text-center">Contact Us</h1>
+
+		<div class="contact-location flex-row bottom-space">
+			<div class="flex-row__item no-margin">
+				<iframe class="map" width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.44622915983203%2C48.77008202828899%2C-122.4409666657448%2C48.77171898104379&amp;layer=mapnik&amp;marker=48.77090051133739%2C-122.44359791278839" style="border: 1px solid black"></iframe>
+			</div>
+
+			<div class="contact-location__text flex-row__item">
+				<h2>Our location</h2>
+				<p class="text-bold text-bigger">2950 Newmarket Street<br>Bellingham, WA 98226</p>
+
+				<a href="https://www.google.com/maps" class="button">View on Map</a>
+			</div>
+		</div>
+		<div class="text-center">
+			<h3>Questions about Classes</h3>
+			<p class="text-bigger text-bold full-width bottom-space"><a class="a--invisible" 	href="mailto:classes@artofcooking.com">classes@artofcooking.com</a><br>(360) 	555-6789</p>
+
+			<h3>Facility Rental Information</h3>
+			<p class="text-bigger text-bold full-width bottom-space"><a class="a--invisible" 	href="mailto:rentals@artofcooking.com">rentals@artofcooking.com</a><br>(360) 	555-6790</p>
+
+			<h3>Other Questions</h3>
+			<p class="text-bigger text-bold full-width bottom-space"><a class="a--invisible" 	href="mailto:info@artofcooking.com">info@artofcooking.com</a><br>(360) 555-6791</p>
+		</div>
+	</div>
+{% endblock %}

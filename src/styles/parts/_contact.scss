@@ -1,0 +1,20 @@
+@import "../deps/meta";
+
+.contact-location {
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: $radius-small;
+	}
+
+	.contact-location__text {
+		@media screen and (min-width: $breakpoint-tablet) {
+			padding-top: 3rem;
+		}
+	}
+}
+
+.map {
+	width: 100%;
+	max-width: 640px;
+}

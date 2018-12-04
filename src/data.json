@@ -1,0 +1,211 @@
+{
+	"nav": [
+		{
+			"href": "index",
+			"name": "Home",
+			"id": "home"
+		}, {
+			"href": "pages/classes",
+			"name": "Classes",
+			"id": "classes"
+		}, {
+			"href": "pages/recipes",
+			"name": "Recipes",
+			"id": "recipes"
+		}, {
+			"href": "pages/register",
+			"name": "Register",
+			"id": "register"
+		}, {
+			"href": "pages/contact",
+			"name": "Contact",
+			"id": "contact"
+		}
+	],
+
+	"upcomingClasses": [
+		{
+			"month": "April",
+			"classes": [
+				{
+					"name": "French Bistro Dinner",
+					"image": "french-bistro.jpg",
+					"date": "May 2018"
+				},{
+					"name": "Cooking with Olive Oil",
+					"image": "french-bistro.jpg",
+					"date": "May 2018"
+				},{
+					"name": "Ethiopian Cuisine",
+					"image": "french-bistro.jpg",
+					"date": "May 2018"
+				}
+			]
+		}, {
+			"month": "May",
+			"classes": [
+				{
+					"name": "Flavors of Spain, Tapas",
+					"image": "french-bistro.jpg",
+					"date": "May 2018"
+				},{
+					"name": "A Taste of Southeast Asia",
+					"image": "french-bistro.jpg",
+					"date": "May 2018"
+				}
+			]
+		}
+	],
+
+	"classes": [
+		{
+			"name": "Hearty Soups and Warm Breads",
+			"id": "hearty-soups",
+			"imageAlt": "Close up shots from above of three bowls containing soup with basil and pasta sitting on a wooden surface.",
+			"time": "February 5, 6:00-8:30 PM",
+			"chef": "Cindy McKinney",
+			"price": 45,
+			"description": "Soup and warm bread from the oven are a winning combo on a chilly evening. Watch, learn, and taste as soupmaster Cindy McKinney prepares a delicious bouillabaisse with zucchini bread, Tuscan bean and pasta soup with focaccia, and broccoli-potato soup with dill and cheddar bread. In addition to great recipes, you will receive tips on meal planning, and tasty flavor combinations, along with general cooking and baking techniques."
+		},{
+			"name": "The Magic of Slow Cookery",
+			"imageAlt": "Extreme close up of potatoes, carrots and meat in a slow cooker.",
+			"id": "slow-cookery",
+			"time": "February 10, 6:30-8:30 PM",
+			"chef": "Cindy McKinney",
+			"price": 45,
+			"description": "If you haven't experienced the magic and ease of slow cookery, this evening is designed to inspire and convince you that slow cookers (also known as crock pots) are here to stay! Taste-test Cindy's hearty pot roast Italiano, classic French cassoulet, wild rice and nut stuffed sweet onions, a surprise winter soup, and, to complete the evening, pears poached in Pinot Noir wine. Receive more great recipes, cooking tips, and leave class a true believer."
+		},{
+			"name": "Hand Crafted Chocolate Truffles",
+			"imageAlt": "Close up shot of assorted truffles on a white cloth.",
+			"id": "truffles",
+			"time": "February 12, 6:00-8:30 PM",
+			"chef": "Cindy McKinney",
+			"price": 39,
+			"description": "Take the mystery out of truffle-making in this hands-on class that's just in time for Valentine's Day! Instructor Cindy McKinney, a self-proclaimed chocoholic, will lead you through the steps as you create bittersweet Belgian chocolate with Chambord, white chocolate truffles with Grand Marnier, and chai-infused milk chocolate truffles. Bring a box to transport your creations home to share with family and friends."
+		},{
+			"name": "A Tribute to Mardi Gras",
+			"imageAlt": "Shrimp and rice on a plate sitting on a table.",
+			"id": "mardi-gras",
+			"time": "February 21, 6:00-9:00 PM",
+			"chef": "Glenn Denkler",
+			"price": 49,
+			"description": "Chef Glenn Denkler invites you to \"Laissez les bons temps rouler\" (Let the good times roll)! In honor of Mardi Gras (Fat Tuesday) and Glenn's passion for Cajun and Creole fare, come celebrate as he prepares authentic dishes including Thibodeaux barbequed shrimp, Low Country Jambalaya with Shirley's Cornbread, and sweet potato pecan pie. Expand your palate, join Glenn's party, and gain new cooking skills to boot!"
+		},{
+			"name": "The French Kitchen",
+			"imageAlt": "Roasted chicken in broth in a pan shot from above.",
+			"id": "french-kitchen",
+			"time": "March 6, 6:00-8:30 PM",
+			"chef": "Nahla Gholam",
+			"price": 45,
+			"description": "Spend an evening with Nahla Gholam as she creates for your enjoyment a French-infused Mediterranean \"cuisine quotidienne\" (the daily meal) that promises to thrill your taste buds. Her menu includes savory winter Au Pistou soup, Poulet au Vin (a favorite French chicken stew), and for dessert--crepes au chocolat. Co-owner of Mediterranean Specialties in Bellingham, Nahla looks forward to sharing her experience and love for French and Mediterranean cuisine."
+		},{
+			"name": "The Mexican Kitchen, Tamales",
+			"imageAlt": "Stacked up tamales on a green wood surface with a white flower in the background.",
+			"id": "tamales",
+			"time": "March 12, 6:00-8:30 PM",
+			"chef": "Ana Cecilia Dominguez",
+			"price": 45,
+			"description": "Tamales are traditionally served in Latin American cultures at special celebrations and gatherings of family and friends--a tradition you will want to begin after experiencing this class! Instructor Ana Cecilia Dominguez Jackson will present a selection of authentic tamales sure to please your palate: Tamales de Puerco en Salsa Roja (red sauce pork tamales), Tamales de Pollo en Mole (chicken tamales with mole sauce) wrapped in banana leaves, Tamales de Elote Blanco de Sonora (Sonora-style white corn tamales), and a dessert Tamale de Dulce filled with pineapple, pecans, and raisins--perfect for the person with a sweet tooth. Take the fear out of tamale-making as you bring this authentic, delicious dish into your very own kitchen."
+		}
+	],
+
+	"recipes": [
+		{
+			"name": "Squash Soup with Gruyère Croutons",
+			"id": "squash-soup",
+			"imageAlt": "Close up shot of squash soup inside a bowl with two basil leaves on top.",
+			"ingredients": [
+				{
+					"name": "Soup",
+					"items": [
+						"1/4 cup butter",
+						"1 large onion, finely chopped",
+						"4 large garlic cloves, chopped",
+						"3 14-ounce cans low-salt chicken broth",
+						"4 cups 1-inch pieces peeled butternut squash (about 1 1/2 pounds)",
+						"4 cups 1-inch pieces peeled acorn squash (about 1 1/2 pounds)",
+						"1 1/4 teaspoons minced fresh thyme",
+						"1 1/4 teaspoons minced fresh sage",
+						"1/4 cup whipping cream",
+						"2 teaspoons sugar"
+					]
+				}, {
+					"name": "Croutons",
+					"items": [
+						"2 tablespoons butter",
+						"1 baguette, cut into 24 1/4-inch-thick slices",
+						"1 cup grated Gruyère cheese",
+						"1 teaspoon minced fresh thyme",
+						"1 teaspoon minced fresh sage"
+					]
+				}
+			],
+			"preperation": [
+				"For soup:",
+				"Melt butter in large pot over medium heat. Add onion and garlic and sauté until tender, about 10 minutes. Add broth, all squash and herbs; bring to boil. Reduce heat, cover and simmer until squash is very tender, about 20 minutes.",
+				"Working in batches, puree soup in blender. Return soup to same pot. Stir in cream and sugar; bring to simmer. Season with salt and pepper. (Can be made 1 day ahead. Chill. Rewarm over medium heat before serving.)",
+				"For croutons:",
+				"Preheat broiler. Butter 1 side of each bread slice. Arrange bread, buttered side up, on baking sheet. Broil until golden, about 1 minute. Turn over. Sprinkle cheese, then thyme and sage over. Sprinkle with salt and pepper. Broil until cheese melts, about 1 minute. Ladle soup into bowls. Top each with croutons and serve."
+			]
+		}, {
+			"name": "Chicken and Sausage Jambalaya",
+			"id": "chicken-sausage-jambalaya",
+			"imageAlt": "Close up shot of Chicken Jambalaya",
+			"ingredients": [
+				{
+					"items": [
+						"2 tablespoons olive oil",
+						"1 4-pound chicken, cut into 8 pieces",
+						"2 cups chopped onions",
+						"2 cups chopped green bell peppers",
+						"1/4 cup chopped fresh parsley",
+						"1 tablespoon minced garlic",
+						"2 pounds kielbasa, cut into 1/2-inch-thick slices",
+						"2 bay leaves",
+						"2 teaspoons chili powder",
+						"1 teaspoon dried thyme",
+						"3/4 teaspoon cayenne pepper",
+						"1/4 teaspoon ground cloves",
+						"3 cups long-grain white rice",
+						"6 cups canned low-salt chicken broth"
+					]
+				}
+			],
+			"preperation": [
+				"Heat oil in heavy large pot over high heat. Working in batches, add chicken and cook until brown on all sides, about 8 minutes per batch. Transfer chicken to platter. Reduce heat to medium-high; add onion, bell peppers, parsley and garlic to pot. Sauté until onions are tender, about 5 minutes. Add sausage, bay leaves, chili powder, thyme, cayenne pepper and cloves; sauté until spices are fragrant and flavors blend, about 5 minutes. Add rice; stir to coat.",
+				"Pour broth over rice mixture in pot. Add chicken; press to submerge in liquid. Bring to boil. Reduce heat to low, cover and cook until liquid is absorbed, rice is tender and chicken is cooked through, about 35 minutes. Remove bay leaves. Season with salt, pepper and more cayenne pepper, if desired. Serve hot."
+			]
+		}, {
+			"name": "Ceviche de Camaron",
+			"id": "ceviche-de-camaron",
+			"imageAlt": "Close up show of Ceviche De Camaron.",
+			"ingredients": [
+				{
+					"items": [
+						"1/2 cup  fresh lime juice",
+						"1 pound unpeeled small shrimp",
+						"1/2 medium white onion, chopped",
+						"1/3 cup chopped fresh cilantro",
+						"1/2 cup ketchup",
+						"1 to 2 tablespoons vinegary Mexican hot sauce",
+						"2 tablespoons olive oil",
+						"1 cup diced peeled cucumber or jícama",
+						"1 small ripe avocado, peeled, pitted and cubed",
+						"Salt",
+						"Several lime slices for garnish",
+						"Tostadas or tortilla chips"
+					]
+				}
+			],
+			"preperation": [
+				"The ceviche is best made the day it is served. The flavorings can be added to the shrimp a few hours in advance.",
+				"Cooking and Marinating the Shrimp:",
+				"Bring 1 quart salted water to a boil and add 2 tablespoons of the lime juice. Scoop in the shrimp, cover and let the water return to the boil. Immediately remove from the heat, set the lid askew and pour off all the liquid. Replace the cover and let the shrimp steam off the heat for 10 minutes. Spread out the shrimp in a large glass or stainless steel bowl to cool completely. Peel and devein the shrimp. Toss the shrimp with the remaining 1/2 lime juice, cover and refrigerate for about an hour.",
+				"The flavorings:",
+				"In a small strainer, rinse the onion under cold water, then shake off the excess liquid. Add to the shrimp bowl along with the cilantro, ketchup, hot sauce, olive oil, cucumber and/or jícama and avocado. Taste and season with salt. Cover and refrigerate if not serving immediately.",
+				"Serving the ceviche:",
+				"Spoon the ceviche into sundae glasses, martini glasses, or small bowls: garnish with sprigs of cilantro and slices of lime. Serve with tostadas or tortilla chips."
+			]
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{% extends "deps/_layout.njk" %}
+
+{% set pageId = "register" %}
+{% set pageTitle = "Register" %}
+{% set pageDescription = "Register for the Art of Cooking, diverse cooking classes in local Bellingham, Washington throughout the year taught by professionals for affordable prices." %}
+
+{% block content %}
+	<div class="page">
+
+		<div class="register-online text-center">
+			<h1>Register</h1>
+			<a href="{{ root }}/pages/register-form.html" class="button button--bigger">Register online</a>
+		</div>
+
+		<div class="page bottom-space">
+			<h2 class="h3 text-center">Or...</h2>
+
+			<div class="register-row">
+				<div class="register-row__item">
+					<h3>Register by phone</h3>
+					<p class="register-highlight">(360) 555-6789</p>
+					<p class="text-bold text-center">Monday to Friday, 8am-5pm</p>
+				</div>
+
+				<div class="register-row__item">
+					<h3>Register by fax</h3>
+					
+					<p class="register-highlight">(360) 555-6999</p>
+					
+					<ol class="text-bold">
+						<li>Print out our <a href="#">Registration form (pdf)</a></li>
+						<li>Fax completed form to the above number</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="register-row">
+				<div class="register-row__item">
+					<h3>Register by Mail</h3>
+
+					<p class="register-highlight">The Art of Cooking,<br>2950 Newmarket Street,<br>Bellingham, WA 98226</p>
+
+					<ol class="text-bold">
+						<li>Print out our <a href="#">Registration form (pdf)</a></li>
+						<li>Mail completed form to above address</li>
+					</ol>
+				</div>
+
+				<div class="register-row__item">
+					<h3>Walk In Register</h3>
+
+					<p class="register-highlight">2950 Newmarket Street, Bellingham</p>
+
+					<p class="text-bold">Register in person at our main office at the above location.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

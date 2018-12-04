@@ -1,0 +1,202 @@
+@import "../deps/meta";
+
+* { box-sizing: border-box; }
+
+*::selection {
+	background-color: $color-stone;
+	color: white;
+}
+
+html {
+	font-size: 16px;
+
+	@media screen and (max-width: $breakpoint-mobile) {
+		font-size: 12px;
+	}
+}
+
+body {
+	line-height: 150%;
+	font-family: $font-verdana;
+	font-size: 1rem;
+	color: $color-stone;
+
+	&.menu-expanded { overflow: hidden; }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+	display: block;
+	font-family: $font-nexa-rust;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 120%;
+	margin-bottom: 1rem;
+}
+
+h1, .h1 {
+	font-size: 3rem;
+}
+
+h2, .h2 {
+	font-size: 2rem;
+}
+
+h3, .h3 {
+	font-size: 1.5rem;
+}
+
+h4, .h4 {
+	font-size: 1.25rem;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	h1, .h1 {
+		font-size: 4rem;
+	}
+	
+	h2, .h2 {
+		font-size: 3rem;
+	}
+	
+	h3, .h3 {
+		font-size: 2rem;
+	}
+}
+
+p {
+	max-width: 850px;
+	max-width: 80ch;
+	margin-bottom: 1rem;
+}
+
+
+
+textarea, button, select, .button, input[type="submit"], input[type="button"], input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+	border-radius: $radius-small;
+	width: auto;
+	transition: background-color 0.25s, box-shadow 0.15s;
+	border: none;
+	margin: 0;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+
+	&:focus {
+		box-shadow: 0 0 0 0.25rem rgba($color-stone, 0.4);
+		outline: none;
+	}
+}
+
+button, select, .button, input[type="submit"], input[type="button"], input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+	height: $input-height;
+	line-height: $input-height;
+	white-space: nowrap;
+}
+
+button, .button, input[type="submit"], input[type="button"] {
+	display: inline-block;
+	background-color: $color-stone;
+	color: white;
+	text-decoration: none;
+	padding: 0 2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	font-family: $font-nexa;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	margin-bottom: 1rem;
+
+	&:hover, &:active {
+		background-color: lighten($color-stone);
+	}
+
+	&.button--bigger {
+		height: $input-height * 1.25;
+		line-height: $input-height * 1.25;
+		font-size: 1.5rem;
+		padding: 0 2.15rem;
+	}
+
+	&.button--white {
+		background-color: white;
+		color: $color-stone;
+
+		&:hover {
+			background-color: mix($color-stone, white, 20%);
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 0.25rem rgba(white, 0.4);
+		}
+	}
+
+	&.button--yellow {
+		background-color: $color-sun;
+		color: $color-stone;
+
+		&:hover {
+			background-color: mix($color-sun, white, 75%);
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 0.25rem rgba($color-sun, 0.4);
+		}
+	}
+}
+
+textarea, select, input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+	padding: 0 1rem;
+	background-color: white;
+	border: none;
+	border: $border-small solid $color-stone;
+	font-size: 1rem;
+	line-height: $input-height - (2 * $border-small);
+	width: 15rem;
+	max-width: 100%;
+}
+
+
+textarea {
+	display: block;
+	resize: vertical;
+	padding: 0.5rem;
+	width: 100%;
+	font-family: $font-verdana;
+	min-height: 10rem;
+	line-height: 150%;
+}
+
+label.label--top {
+	display: block;
+	margin-bottom: 0.25rem;
+}
+
+ul, ol {
+	display: block;
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+}
+
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+
+strong {
+	font-weight: bold;
+}
+
+a {
+	color: inherit;
+	
+	&.a--invisible {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

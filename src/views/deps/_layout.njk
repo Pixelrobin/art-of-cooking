@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{ pageDescription if pageDescription else "The Art of Cooking offers short, diverse cooking classes in local Bellingham, Washington throughout the year taught by professionals for affordable prices." }}">
+
+		<title>{{ pageTitle }} - The Art of Cooking</title>
+
+		<link rel="stylesheet" type="text/css" href="{{root}}/css/main.css">
+
+		<script type="text/javascript">window.root = '{{root}}';</script>
+		<script type="text/javascript" src="{{root}}/scripts/main.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="pre-footer">
+				<header class="{{ headerClass }}">
+					{% block headerStart %}{% endblock %}
+
+					<a href="{{ root }}/index.html"><img id="header-logo" alt="Art of Cooking logo" src="{{ root }}/media/logo-blue.svg"></a>
+					<nav>
+						<ul id="nav-ul">
+							<div class="nav-ul__bg"></div>
+
+							<li id="nav-toggle">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30">
+									<rect width="32" height="6"/>
+									<rect y="24" width="32" height="6"/>
+									<rect y="12" width="32" height="6"/>
+								</svg>
+							</li>
+
+							{% for item in nav %}
+								<li class="{{ "nav-current" if pageId == item.id else "" }}" ><a href="{{ root }}/{{ item.href }}.html">{{item.name}}</a></li>
+							{% endfor %}
+						</ul>
+					</nav>
+
+					{% block headerEnd %}{% endblock %}
+				</header>
+
+				{% block content %}{% endblock %}
+			</div>
+
+			<footer>
+				<div class="footer-address">
+					<h1 class="h3">Contact</h1>
+					<p>(360) 555-6789</p>
+					<p>2950 Newmarket Street<br>Bellingham, WA 98226</p>
+					<a href="https://www.google.com/maps" class="button button--white">View on map</a>
+				</div>
+
+				<nav>
+					<h1 class="h3">Links</h1>
+					<ul>
+						{% for item in nav %}
+							<li><a href="{{ root }}/{{ item.href }}.html">{{ item.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
+
+				<p class="footer-copyright">Copyright Michael Savchuk 2018</p>
+			</footer>
+		</div>
+	</body>
+</html>
