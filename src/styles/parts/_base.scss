@@ -8,11 +8,11 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 100%;
 
-	@media screen and (max-width: $breakpoint-mobile) {
+	/*@media screen and (max-width: $breakpoint-mobile) {
 		font-size: 12px;
-	}
+	}*/
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 	font-size: 1rem;
 	color: $color-stone;
 
-	&.menu-expanded { overflow: hidden; }
+	&.js-nav-expanded { overflow: hidden; }
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -142,6 +142,15 @@ button, .button, input[type="submit"], input[type="button"] {
 		&:focus {
 			box-shadow: 0 0 0 0.25rem rgba($color-sun, 0.4);
 		}
+	}
+
+	&.button--reset {
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		width: initial;
+		height: initial;
+		//box-shadow: none;
 	}
 }
 

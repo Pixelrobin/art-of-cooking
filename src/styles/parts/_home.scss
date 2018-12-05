@@ -28,9 +28,10 @@ header.home {
 
 	.header__nav__button {
 		position: absolute;
-		top: (6rem - $input-height * 1.25) / 2;
-		left: 2rem;
+		top: (6rem - $input-height) / 2;
+		right: 2rem;
 		display: none;
+		margin: 0;
 
 		@media screen and (max-width: $breakpoint-tablet) {
 			display: block;
@@ -43,7 +44,7 @@ header.home {
 		}
 	}
 
-	#header-logo {
+	.header-logo {
 		display: none;
 	}
 

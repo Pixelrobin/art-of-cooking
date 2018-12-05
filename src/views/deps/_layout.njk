@@ -16,26 +16,29 @@
 	</head>
 
 	<body>
+		<script type="text/javascript">document.body.classList.add('js-enabled');</script>
+		<div id="nav-size"></div>
+		
 		<div id="wrapper">
 			<div id="pre-footer">
 				<header class="{{ headerClass }}">
 					{% block headerStart %}{% endblock %}
 
-					<a href="{{ root }}/index.html"><img id="header-logo" alt="Art of Cooking logo" src="{{ root }}/media/logo-blue.svg"></a>
-					<nav>
+					<a href="{{ root }}/index.html" class="header-logo"><img alt="Art of Cooking logo" src="{{ root }}/media/logo-blue.svg"></a>
+					
+					<nav role="navigation" id="nav">
+						<button class="button--reset" id="nav-toggle" aria-expanded="false">
+							<svg aria-hidden width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30">
+								<rect width="32" height="6"/>
+								<rect y="24" width="32" height="6"/>
+								<rect y="12" width="32" height="6"/>
+							</svg>
+							<span class="sr-only">Menu</span>
+						</button>
+
 						<ul id="nav-ul">
-							<div class="nav-ul__bg"></div>
-
-							<li id="nav-toggle">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30">
-									<rect width="32" height="6"/>
-									<rect y="24" width="32" height="6"/>
-									<rect y="12" width="32" height="6"/>
-								</svg>
-							</li>
-
 							{% for item in nav %}
-								<li class="{{ "nav-current" if pageId == item.id else "" }}" ><a href="{{ root }}/{{ item.href }}.html">{{item.name}}</a></li>
+								<li class="{{ 'nav-current' if pageId == item.id else '' }}" style="animation-duration: {{ 0.1 + loop.index * 0.05 }}s;" ><a href="{{ root }}/{{ item.href }}.html">{{item.name}}</a></li>
 							{% endfor %}
 						</ul>
 					</nav>
