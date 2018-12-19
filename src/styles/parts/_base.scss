@@ -152,6 +152,18 @@ button, .button, input[type="submit"], input[type="button"] {
 		height: initial;
 		//box-shadow: none;
 	}
+
+	&.button--dark {
+		background-color: darken($color-stone, 10%);
+		
+		&:hover {
+			background-color: $color-stone;
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 0.25rem rgba(darken($color-stone, 10%), 0.4);
+		}
+	}
 }
 
 textarea, select, input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {

@@ -4,25 +4,22 @@
 {% set pageId = "home" %}
 {% set pageTitle = "Home" %}
 
-{% block headerStart %}
+{% block headerEnd %}
 	<a href="{{ root }}/pages/classes.html" class="button header__nav__button">See Classes</a>
 {% endblock %}
 
-{% block headerEnd %}
+{% block content %}
 	<div class="header__hero">
 		<div class="header__hero__content">
 			<img alt="Art of Cooking logo" src="{{ root }}/media/logo-blue.svg">
-			<br>
 			<a class="button button--bigger" href="{{ root }}/pages/classes.html">See Classes</a>
 		</div>
 
-		<img id="header-cookers" alt="4 People crowded around big pans cooking" src="{{ root }}/media/people-cooking.jpg">
+		<img class="header__hero__image" alt="4 People crowded around big pans cooking" src="{{ root }}/media/people-cooking.jpg">
 
 		<div class="paint-bottom"></div>
 	</div>
-{% endblock %}
-
-{% block content %}
+	
 	<div class="page" style="padding-top: 2rem;">
 		<h1 class="text-center">The Art of Cooking</h1>
 		<h2 class="text-center h3 bottom-space">Institute of Culinary Arts</h2>
@@ -34,7 +31,7 @@
 		</div>
 	</div>
 
-	<div class="home-description bottom-space">
+	<!--<div class="home-description bottom-space">
 		<div class="paint-top"></div>
 		<div class="home-description__content">
 			<figure class="home-description__chef">
@@ -49,7 +46,7 @@
 			<p>The Art of Cooking offers short classes throughout the year in our well equipped facilities that rival the best five star kitchens of the world. Learn from the chefs who concoct the most savory fare at Bellingham’s local restaurants and eateries.</p>
 		</div>
 		<div class="paint-bottom"></div>
-	</div>
+	</div>-->
 
 	<!--<img class="home-soup" src="{{ root }}/media/soup.jpg" alt="">-->
 

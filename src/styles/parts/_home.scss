@@ -2,18 +2,34 @@
 
 header.home {
 	background-color: $color-sun;
+	margin-bottom: 0;
+	padding-top: 6rem;
 
-	@media screen and (max-width: $breakpoint-tablet) {
-		padding-top: 6rem;
+	nav {
+		margin-bottom: 0;
+
+		a {
+			color: $color-stone;
+
+			.js-enabled & {
+				color: $color-sun;
+			}
+		}
+	}
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		padding-top: 0;
 	}
 
 	@media screen and (min-width: $breakpoint-tablet) {
 		nav {
-			padding-left: 0;
+			padding-left: 14rem;
 			background-color: $color-sun;
-			
-			a {
+
+			ul li a {
 				color: $color-stone;
+
+				.js-enabled & { color: $color-stone; }
 			}
 	
 			.nav-current a, a:hover {
@@ -23,90 +39,107 @@ header.home {
 			#nav-toggle svg rect {
 				fill: $color-stone;
 			}
+
+			@media screen and (min-width: $breakpoint-tablet) {
+				padding-left: 2rem;
+			}
 		}
 	}
 
 	.header__nav__button {
 		position: absolute;
-		top: (6rem - $input-height) / 2;
-		right: 2rem;
-		display: none;
+		top: 1.5rem;
+		left: 1rem;
+		display: block;
 		margin: 0;
 
-		@media screen and (max-width: $breakpoint-tablet) {
-			display: block;
-		}
-	}
-
-	ul {
-		li {
-			width: auto;
+		@media screen and (min-width: $breakpoint-tablet) {
+			display: none;
 		}
 	}
 
 	.header-logo {
 		display: none;
 	}
+}
 
-	.header__hero {
-		background-color: $color-sun;
-		width: 100%;
-		position: relative;
-		overflow: hidden;
+.header__hero {
+	background-color: $color-sun;
+	width: 100%;
+	position: relative;
+	height: 100vw;
+	overflow: hidden;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		height: 40vw;
+		min-height: 40rem;
+		max-height: 50rem;
+	}
+
+	.header__hero__image {
+		display: block;
+		height: 100%;
+		width: auto;
+		float: left;
+
+		@media screen and (min-width: 1010px) {
+			
+		}
+
+		@media screen and (min-width: $breakpoint-tablet) {
+			//margin-right: 15%;
+			margin-left: 15%;
+			margin-left: calc(50% - 22rem);
+		}
+
+		@media screen and (min-width: 1360px) {
+			margin-left: 0;float: right;
+		}
+
+		/*@media screen and (max-width: $breakpoint-tablet) {
+			float: none;
+			padding: 0;
+			width: 200%;
+			height: auto;
+		}
+
+		@media screen and (min-width: 1360px) {
+			float: right;
+			//min-height: 40vw;
+		}*/
+	}
+
+	.header__hero__content {
+		position: absolute;
+		width: 50%;
+		padding-left: 2rem;
+		height: 75%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 
 		img {
-			display: block;
-			padding-left: 20%;
+			width: 100%;
+			max-width: 12rem;
+			height: auto;
+			margin-bottom: 2rem;
+			margin-top: 2rem;
 
-			@media screen and (max-width: $breakpoint-tablet) {
-				float: none;
-				padding: 0;
-				width: 200%;
-				height: auto;
-			}
-
-			@media screen and (min-width: 1360px) {
-				float: right;
+			@media screen and (min-width: 1700px) {
+				max-width: 18rem;
 			}
 		}
 
-		.header__hero__content {
-			float: left;
-			position: absolute;
-			top: 35%;
-			left: 15%;
-			transform: translateY(-50%);
-			text-align: center;
+		.button {
+			display: none;
+			margin: 0;
+		}
 
-			img {
-				display: inline-block;
-				margin-bottom: 2rem;
-				width: 15rem;
-				height: auto;
-				float: none;
-				padding: 0;
-			}
-
+		@media screen and (min-width: $breakpoint-tablet) {
 			.button {
-				margin: 0;
-				float: none;
-				width: 100%;
-			}
-
-			@media screen and (max-width: $breakpoint-tablet) {
-				float: none;
-				width: 50%;
-				position: absolute;
-				transform: none;
-				left: 2rem;
-				top: 2rem;
-				padding: 2rem;
-
-				img {
-					width: 100%;
-				}
-
-				.button { display: none; }
+				display: inline-block;
 			}
 		}
 	}
